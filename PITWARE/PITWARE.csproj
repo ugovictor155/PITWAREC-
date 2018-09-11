@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C07417D7-A0BA-485F-9C2F-1C6A07F0E994}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PITWARE</RootNamespace>
+    <AssemblyName>PITWARE</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="alumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alumnos.Designer.cs">
+      <DependentUpon>alumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="institucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="institucion.Designer.cs">
+      <DependentUpon>institucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENU.Designer.cs">
+      <DependentUpon>MENU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="alumnos.resx">
+      <DependentUpon>alumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="institucion.resx">
+      <DependentUpon>institucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENU.resx">
+      <DependentUpon>MENU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rayas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\record-normal_32x32-32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SAL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_24x24-32 %283%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buddy-Green_24x24-32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator_24x24-32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\community-users_24x24-32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WLM_24x24-32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User 12_24x24-32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saldos.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adecuacion.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\analitico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FloppyRed_48x48-32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eject-normal-red_16x16-32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Desktop_24x24-32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-date_24x24-32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VLC_24x24-32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_24x24-32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Public_24x24-32 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shutdown_24x24-32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chart_24x24-32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resource-Hacker_24x24-32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock_24x24-32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh_24x24-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Winrar_24x24-32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blog-post-edit_24x24-32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Safari_24x24-32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note-edit_24x24-32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print_24x24-32 %282%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Line_Graph_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Options_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Database_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Information_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accept_16x16-32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\step-forward-pressed_32x32-32.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WMP_32x32-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_24x24-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Color MS OneNote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-full_24x24-32.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

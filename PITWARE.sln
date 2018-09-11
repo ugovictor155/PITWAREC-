@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PITWARE", "PITWARE\PITWARE.csproj", "{C07417D7-A0BA-485F-9C2F-1C6A07F0E994}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C07417D7-A0BA-485F-9C2F-1C6A07F0E994}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C07417D7-A0BA-485F-9C2F-1C6A07F0E994}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C07417D7-A0BA-485F-9C2F-1C6A07F0E994}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C07417D7-A0BA-485F-9C2F-1C6A07F0E994}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37262FF4-9231-44D3-917E-D56FA9AFEEE3}
+	EndGlobalSection
+EndGlobal
